@@ -196,7 +196,7 @@ Aspiring SOC Analyst
 
 ## Project Demo
 
- https://drive.google.com/file/d/1yL8QmpZxD17QAE3T9bjO2bKj-mEb2ZeZ/view?usp=drive_link
+ https://drive.google.com/file/d/1EE4J1gTagWfCwYBNpiFDkiMKU6FnTcEy/view?usp=drive_link
 
 ---
 
