@@ -134,17 +134,17 @@ The observed behavior clearly indicates a **brute-force attack attempt**, charac
 
 ## Visual Evidence
 
-### 🔹 Failed Login Spike (Brute Force Pattern)
-
+### 🔹 Brute Force Spike
 ![Time Spike](screenshots/time-spike.png)
 
-### 🔹 Targeted Service – Port 443
+### 🔹 Attacker Dashboard
+![Dashboard](screenshots/attacker-ip-dashboard.png)
 
-![Port Analysis](screenshots/port-analysis.png)
-
-### 🔹 Log Evidence (Repeated Failures)
-
+### 🔹 Log Evidence
 ![Logs](screenshots/log-evidence.png)
+
+### 🔹 Port Target
+![Port](screenshots/port-analysis.png)
 
 ---
 
