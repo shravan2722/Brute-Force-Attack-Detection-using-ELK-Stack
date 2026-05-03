@@ -110,28 +110,6 @@ UserName: "Simon" AND action: "failed"
 
 ---
 
-## Conclusion
-
-The observed behavior clearly indicates a **brute-force attack attempt**, characterized by:
-
-* High-frequency failed authentication attempts
-* Repeated login attempts from a single IP
-* Targeted user account
-* Concentrated time-based attack pattern
-
----
-
-## MITRE ATT&CK Mapping
-
-| Technique         | ID     | Description                                  |
-| ----------------- | ------ | -------------------------------------------- |
-| Brute Force       | T1110  | Repeated login attempts to guess credentials |
-| Credential Access | TA0006 | Attempt to obtain valid credentials          |
-| Initial Access    | TA0001 | Attempt to gain unauthorized access          |
-| Valid Accounts    | T1078  | Possible use of compromised credentials      |
-
----
-
 ## Visual Evidence
 
 ### 🔹 Brute Force Attack Pattern
@@ -173,6 +151,16 @@ All attack attempts were directed toward port 443, indicating targeting of VPN/H
 ---
 
 
+## MITRE ATT&CK Mapping
+
+| Technique         | ID     | Description                                  |
+| ----------------- | ------ | -------------------------------------------- |
+| Brute Force       | T1110  | Repeated login attempts to guess credentials |
+| Credential Access | TA0006 | Attempt to obtain valid credentials          |
+| Initial Access    | TA0001 | Attempt to gain unauthorized access          |
+| Valid Accounts    | T1078  | Possible use of compromised credentials      |
+
+---
 
 ## KQL Queries Used
 
@@ -188,7 +176,16 @@ UserName: "Simon" AND action: "failed"
 
 # Combined detection
 action: "failed" AND Source_ip: "172.201.60.191"
+
 ```
+## Conclusion
+
+The observed behavior clearly indicates a **brute-force attack attempt**, characterized by:
+
+* High-frequency failed authentication attempts
+* Repeated login attempts from a single IP
+* Targeted user account
+* Concentrated time-based attack pattern
 
 ---
 
