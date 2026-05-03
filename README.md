@@ -134,19 +134,34 @@ The observed behavior clearly indicates a **brute-force attack attempt**, charac
 
 ## Visual Evidence
 
-### 🔹 Brute Force Spike
+### 🔹 Brute Force Attack Pattern
+Spike in failed login attempts over a short time period, indicating automated brute-force behavior.
+
 ![Time Spike](screenshots/time-spike.png)
 
-### 🔹 Attacker Dashboard
-![Dashboard](screenshots/attacker-ip-dashboard.png)
+---
 
-### 🔹 Log Evidence
-![Logs](screenshots/log-evidence.png)
+### 🔹 Attacker Identification
+Single source IP responsible for a high volume of failed authentication attempts (274 events).
 
-### 🔹 Port Target
-![Port](screenshots/port-analysis.png)
+![Attacker IP](screenshots/attacker-ip-dashboard.png)
 
 ---
+
+### 🔹 Raw Log Evidence
+Repeated failed login attempts observed in raw logs targeting VPN service (port 443).
+
+![Logs](screenshots/log-evidence.png)
+
+---
+
+### 🔹 Targeted Service (Port Analysis)
+All attack attempts were directed toward port 443, indicating targeting of VPN/HTTPS service.
+
+![Port](screenshots/port-analysis.png)
+---
+
+
 
 ## KQL Queries Used
 
