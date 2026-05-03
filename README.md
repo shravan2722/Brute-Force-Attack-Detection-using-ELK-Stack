@@ -155,6 +155,17 @@ Repeated failed login attempts observed in raw logs targeting VPN service (port 
 
 ---
 
+Analysis of network traffic shows that all failed login attempts were directed toward **port 443**.
+
+Port 443 is commonly used for:
+- HTTPS traffic
+- VPN authentication services
+
+The concentration of attack activity on a single port indicates that the attacker specifically targeted a secure remote access service.
+
+This behavior is consistent with brute-force attempts against VPN or web-based authentication systems.
+
+
 ### 🔹 Targeted Service (Port Analysis)
 All attack attempts were directed toward port 443, indicating targeting of VPN/HTTPS service.
 
